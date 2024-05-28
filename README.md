@@ -49,7 +49,8 @@ tried to replicate, but just couldn't.
 This is my favorite feature as it makes browsing for schemes easy breasy fun.
 1. When you a satified with the scheme, just select, and it becomes your current scheme.
 
-Look at that Hot-Swap!!!
+#Look at that Hot-Swap!!!
+
 ![Hot Swap GIF](assets/picasso_hot_swap.gif)
 
 ## 🖌  How To Install
