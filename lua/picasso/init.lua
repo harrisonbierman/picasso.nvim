@@ -55,11 +55,12 @@ function CloseMenu()
 	end
 	if vim.api.nvim_win_is_valid(Picasso_win_id) then
 		cursor_saved_pos = vim.api.nvim_win_get_cursor(Picasso_win_id)
-		P("new saved pos is: " .. tostring(cursor_saved_pos))
 		vim.api.nvim_win_close(Picasso_win_id, true)
 	end
 end
 
+--TODO: this allows for the menu to be opened multiple times
+--		make a toggle function instead 
 vim.api.nvim_set_keymap("n", "<leader>pi", "<cmd>lua MyMenu()<CR>", {})
 
 --this funciton dooes not work yet but want to add this in the future

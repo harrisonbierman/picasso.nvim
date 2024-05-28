@@ -1,4 +1,6 @@
 <div align="center">
+
+```text
    _________________________________________________________________
   /\                                                                \
 (O)===)><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><)==(O)
@@ -19,6 +21,7 @@
     /\''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''\    
 (O)===)><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><)==(O)
     \/______________________________________________________________/
+```
 
 ##### The most satifying way to Hot-Swap your color schemes.
 
@@ -45,4 +48,20 @@ tried to replicate, but just couldn't.
 1. As you hover though the menu, a preview of each scheme will be shown to you in real time.
 This is my favorite feature as it makes browsing for schemes easy breasy fun.
 1. When you a satified with the scheme, just select, and it becomes your current scheme.
+
+Look at that Hot-Swap!!!
+![Hot Swap GIF](assets/picasso_hot_swap.gif)
+
+## 🖌  How To Install
+Install with your favorite plugin manager. I'm using `Packer` in the example
+```lua
+use 'nvim-lua/plenary.nvim' -- add this plugin if you dont have it already
+use 'harrisonbierman/picasso.nvim'
+```
+
+## 🖌 How To Use (Keybinds) 
+Currently there is no way to make custom keybind, this is what you will have to do for now.
+1. `<leader>pi` opens the Picasso menu
+1. `return` sets the scheme you are hovering over to the current scheme
+1. `q` quits the Picasso menu
 
