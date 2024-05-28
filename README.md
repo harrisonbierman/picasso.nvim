@@ -30,10 +30,10 @@
 </div>
 
 ## 🖌 The Problem
-You like changing color schemes... A LOT!, but it's is such a draaaaag 
-finding the right scheme blind. You type in the name of the 
-scheme you think you want just to find out it dosen't cut it. Great!
-now you get to type in another scheme and hope this one sparks joy.
+You like changing color schemes... A LOT!, but it's is such a draaaaag.
+You type in the name of the scheme you want, just to 
+find out it dosen't cut it. Great!
+Now you type in another scheme and hope this one sparks joy.
 If you are like me, you will spend the good part of an hour trying
 out color schemes until the feug shui of your IDE emmits a high
 order spiritual experience.
@@ -55,8 +55,18 @@ Look at that Hot-Swap!!!
 ## 🖌  How To Install
 Install with your favorite plugin manager. I'm using `Packer` in the example
 ```lua
+
 use 'nvim-lua/plenary.nvim' -- add this plugin if you dont have it already
 use 'harrisonbierman/picasso.nvim'
+
+```
+
+Just require it in your init.lua
+`init.lua`
+```lua
+
+require('picasso')
+
 ```
 
 ## 🖌 How To Use (Keybinds) 
