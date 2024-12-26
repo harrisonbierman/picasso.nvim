@@ -1,0 +1,1 @@
+fixed(added toggle function)- can open menu while menu is open causing it to get stuck and cant quit
