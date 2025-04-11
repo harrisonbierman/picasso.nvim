@@ -69,7 +69,7 @@ function M.settings.non_existent_scheme_name(attempted_scheme) return [[
 Non-Critical Error: picasso.nvim tried to load setting "]]..attempted_scheme..[[" but scheme name was not found.
 picasso.nvim has switched your scheme to "habamax" for the time being.
 
-Fix: Check if scheme was properly installed. Check if scheme name as changed due to scheme update.
+Fix: Check if scheme was properly installed. Check if scheme name has changed due to scheme update.
 
 ]]
 end
