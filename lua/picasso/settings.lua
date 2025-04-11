@@ -46,11 +46,27 @@ end
 -- make this a match statement
 function M.apply(setting)
 	if setting == "current_scheme" then
-		vim.cmd.colorscheme(M._settings.current_scheme)
+		-- sometimes the scheme saved in the settings.json file does not exist as a valid name anymore
+		-- due to updates to the scheme or deleting the scheme
+		local ok = pcall(function()
+			vim.cmd.colorscheme(M._settings.current_scheme)
+		end)
+
+		if not ok then
+			vim.cmd.colorscheme("habamax")
+			print(error_message.settings.non_existent_scheme_name(M._settings.current_scheme))
+		end
+
 	end
 
 	if setting == "buffer_scheme" then
-		vim.cmd.colorscheme(M._settings.buffer_scheme)
+		local ok = pcall(function()
+			vim.cmd.colorscheme(M._settings.buffer_scheme)
+		end)
+
+		if not ok then
+			vim.cmd.colorscheme("habamax")
+		end
 	end
 end
 
